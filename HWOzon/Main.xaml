@@ -1,0 +1,578 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1117,3735" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="746,3670" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="ui:Browser" Name="browserChrome" />
+      <Variable x:TypeArguments="x:Int32" Name="cntQuantity" />
+      <Variable x:TypeArguments="x:Int32" Name="count">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:Int32" Value="1" />
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="filePath" />
+      <Variable x:TypeArguments="x:String" Name="productName" />
+      <Variable x:TypeArguments="x:String" Name="pathDT" />
+      <Variable x:TypeArguments="x:Int32" Name="existCnt" />
+      <Variable x:TypeArguments="x:Boolean" Name="exist" />
+      <Variable x:TypeArguments="sd:DataTable" Name="extractData" />
+      <Variable x:TypeArguments="sd:DataTable" Name="productDT" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Assign sap2010:Annotation.AnnotationText="Присвоение пути к файлу таблицы данных, которая будет сохранена на рабочий стол, переменной: pathDT" DisplayName="" sap:VirtualizedContainerService.HintSize="684,124" sap2010:WorkflowViewState.IdRef="Assign_2">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[pathDT]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory) +"\Товары Ozon " + DateTime.Now.ToString("dd.MM.yyyy") + ".xlsx"]</InArgument>
+      </Assign.Value>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Assign>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" sap2010:Annotation.AnnotationText="Окно ввода просит пользователя ввести количество товаров, по которым будет осуществлен поиск.&#xA;out: cntQuantity" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="684,154" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="Введите количество наименования, по которым хотите составить отчет:" Title="Поиск эл. техники на Ozon">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:Int32">[cntQuantity]</OutArgument>
+      </ui:InputDialog.Result>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InputDialog>
+    <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="В нем происходит получение наименования товара, открытие сайта, ввод в поиск, извлечение данных о товаре с первых 3 страниц результатов поиска, внесение полученных данных в excel отчет, которые будет сохранен на рабочем столе с указанием даты." Condition="[count&lt;=cntQuantity]" DisplayName="Цикл поиска товаров по каждому наименованию." sap:VirtualizedContainerService.HintSize="684,2883" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_2">
+      <ui:InterruptibleDoWhile.Body>
+        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="648,2660" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" sap2010:Annotation.AnnotationText="Окно ввода просит ввести наименования товара, по которому будет осуществлен поиск.&#xA;out: productName" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="586,139" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Введите наименование устройства:" Title="Поиск эл. техники на Ozon">
+            <ui:InputDialog.Result>
+              <OutArgument x:TypeArguments="x:String">[productName]</OutArgument>
+            </ui:InputDialog.Result>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:InputDialog>
+          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Открытие сайта - Ozon" sap:VirtualizedContainerService.HintSize="586,2217" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OutUiElement="[browserChrome]" ScopeGuid="d25767a5-2830-4387-8094-9d4e8874e0db" Version="V2" WindowResize="Maximize">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Получение основной информации о товарах для составления отчета." sap:VirtualizedContainerService.HintSize="552,2000" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <TryCatch sap2010:Annotation.AnnotationText="Для проверки состояния, производится клик на главной странице сайта, в случае неудачи будут приняты попытки перезагрузки страницы. " DisplayName="Проверка состояния открытия сайта." sap:VirtualizedContainerService.HintSize="490,386" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <TryCatch.Try>
+                      <Sequence sap:VirtualizedContainerService.HintSize="450,364" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Клик на поисковую строку." sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d25767a5-2830-4387-8094-9d4e8874e0db" Timeout="1" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://www.ozon.ru/" CvType="Icon" DesignTimeRectangle="1235, 131, 24, 24" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'SVG'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;header&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;button&amp;gt;span&amp;gt;svg' parentid='stickyHeader' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='stickyHeader' tag='svg' class='x5-e' aaname='' /&gt;" Guid="1481d4e1-8984-4ca3-a82e-c8ff1408985e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEsSURBVEhLvZTLUcQwEEQdCqFsHnshBDLYC0nsiQiIgSIJrtxJYvAru11CatuSQEzVq93qGalHP0/TNeJfseJIrDgSK47EiiOxYsbDU8TtNeLtI7b4/Ip4eV9ybswuVkzA6CgwpsaNtVhxJV0Rq7k8Lzqr4n/aDMb5eIsVZzQZE8nIgTk1BE25mh84EQPFkZloqncinRJVHa9Uj3GitujxXub20Co5d5ffcKKi5cpTS5xeHicqWt+YwuU2nKjnUHNhBNtPdK2w59Koya5Lo/MgWp/F6TFYcab24admVTtixRk6TT9tNCBjcvxPP23E6fmBFVeYOJ/UBTV6u12XJkfGrDidGE1nxm+ak15gxU6qTAvhl+SmRU0h/AGYsv1Q5AthNFYciRVHYsVhRHwDNEXZtwiRzm4AAAAASUVORK5CYII=" InformativeScreenshot="162f3845b8e91926fd8ad2ee58632d77.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='OZON — интернет-магазин. Миллионы товаров по выгодным ценам' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CvElementArea="572, 122, 643, 40" CvTextArea="641, 135, 117, 14" CvTextArgument="NCKaTb Ha Ozon" CvType="InputBox" DesignTimeRectangle="634, 125, 574, 36" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='a5ak tsBodyL' aaname='' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="CommentOut_11">
+                          <ui:CommentOut.Body>
+                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,329" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Ввод в поисковую строку - productName" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="d25767a5-2830-4387-8094-9d4e8874e0db" Text="[productName + &quot;[k(Enter)]&quot;]" Version="V3">
+                                <uix:NTypeInto.Target>
+                                  <uix:TargetAnchorable BrowserURL="https://www.ozon.ru/" CvTextArgument="NCKaTb Ha Ozon" CvType="Text" DesignTimeRectangle="634, 125, 574, 36" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='kaa5 tsBodyL' aaname='' /&gt;" Guid="2c8e250a-54ff-4879-b4d2-b0a02fe7946e" ImageBase64="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" InformativeScreenshot="295402698b69e50e78ba02959ed0b6a7.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='OZON — интернет-магазин. Миллионы товаров по выгодным ценам' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                        <uix:Target CvTextArgument="Bespe" CvType="Text" DesignTimeRectangle="575, 134, 37, 18" ElementType="Text" FriendlyName="'Везде'" FullSelectorArgument="&lt;webctrl aaname='     Везде   ' parentid='stickyHeader' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='     Везде   ' parentid='stickyHeader' tag='SPAN' type='' class='a3ka tsBodyM' check:innerText='Везде' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACkAAAAWCAYAAABdTLWOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAItSURBVEhL7ZTfa9pQGIb3J3vhRS8KEsQypQoWZy4OKEhLA2aMEkqZtIV0rEPsCKtDAqugIxSxpZoOW3r17jv5eTQzdSNbd+HFA+Y757znycl3fPXw+IT/nbVkUqwlkyKQtD40sLldEZBROriA9SO66F8TSA6OGVIZEmuqqHMaDOlMESmmYywseAkWJBV0hEFTq0RqL0GspPG2jNRrDaZQsy5bUJzT1nD4xYLt1Ce4utSh+l+heQR9OAnWjPsXOP8s0sXAfi4zZEGyiA2/JwskmK3h4Fu4mTNHqqC057WDVET+eEhjI7xnZUhMcSSrO9QmmRpOb911nX16lsphbobh0Hou0x3nLO/JPbpIWQovqOhMaY7dRpUCqm3hhM5qtIEKw3v2sU0Nm1JjXnKnhQEft1rY8iVXzIz93A9jHXk63fzpyAvnJ7RIeCqODK/lZNQ7tMbLWSq5QiYnXpK/KS3aeNfzAitQ+8I4Zxb+tqc3GN/ewOppztzdnlt3JPcNd15EMj6TsyBZgxI0tw5F5rfb36wPtUSbvTlC95rLDHHelJGWdViP9zANA1d3906W/f0EJXq5apueZ13sbtHXOPNOVpSMzXS9OJGLM0eOgX0SmnjUBisI41kG5Sv1k22gnhPqRFo+wWBmgAm1eTzRZZn+nkQg+TvYd/ytJ5G/CrdOTGdejUvKUE2vHvCR2mi+75Zlcv5IcnW6ULbpll+vWv81f1kyGdaSSbGWTIYn/AS8E+2tiV4eBwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NTypeInto.Target>
+                              </uix:NTypeInto>
+                            </Sequence>
+                          </ui:CommentOut.Body>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:CommentOut>
+                      </Sequence>
+                    </TryCatch.Try>
+                    <TryCatch.Catches>
+                      <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="456,181" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ActivityAction x:TypeArguments="s:Exception">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                          </ActivityAction.Argument>
+                          <Sequence sap2010:Annotation.AnnotationText="Попытки перезагрузить страницу в браузере." sap:VirtualizedContainerService.HintSize="450,112" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:UiElementExists DisplayName="Подтверждение отсутствия соединения." Exists="[exist]" sap:VirtualizedContainerService.HintSize="532,107" sap2010:WorkflowViewState.IdRef="UiElementExists_4">
+                              <ui:UiElementExists.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4ba6784d-3858-4c66-9161-d266b3190e14" InformativeScreenshot="c97af81fff7c3f962ee8fa62a649987e" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' omit:title='www.ozon.ru - Google Chrome' /&gt;&lt;wnd aaname='www.ozon.ru' cls='Chrome_RenderWidgetHostHWND' omit:title='Chrome Legacy Window' /&gt;">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:UiElementExists.Target>
+                            </ui:UiElementExists>
+                            <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[exist=True and existCnt&lt;3]" DisplayName="While" sap:VirtualizedContainerService.HintSize="532,866" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+                              <ui:InterruptibleWhile.Body>
+                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,700" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <Assign sap2010:Annotation.AnnotationText="Счетчик попыток для перезагрузки страницы" sap:VirtualizedContainerService.HintSize="434,113" sap2010:WorkflowViewState.IdRef="Assign_5">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Int32">[existCnt]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Int32">[existCnt+1]</InArgument>
+                                    </Assign.Value>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </Assign>
+                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Попытка обновить страницу: &quot;+existCnt.ToString]" />
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="5" DisplayName="Обновление страницы, 5 сек." sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d25767a5-2830-4387-8094-9d4e8874e0db" Version="V3">
+                                    <uix:NClick.Target>
+                                      <uix:TargetAnchorable DesignTimeRectangle="80, 46, 28, 28" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Перезагрузить'" FullSelectorArgument="&lt;ctrl name='Московская Биржа - Google Chrome' role='pane' /&gt;&lt;ctrl name='Перезагрузить' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Московская Биржа - Google Chrome' role='pane' /&gt;&lt;ctrl name='Перезагрузить' role='push button' automationid='' check:text='Перезагрузить' /&gt;" Guid="944349fb-a90e-438a-9e14-a1bdd4036762" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFASURBVFhH7ZS7SgNBFIb3TVNYGEhhSiWCCikCAUFDxIAIornWXhu1SuyyqZJyd6u9PMSRf2CGcThJZiBhEab4YHf/M+d8OztsUBQFlYkX8AJewAs4CyRJQv3hhE5Oz6lyUBXg+u7+QWSyrnPT+7NuHUGe52TLy9sHVWt1NdgEGWquu7finuthYi2AxnIQBoThQmW4lkN19PXrsBKI41i9OUS4GnDRbO1H4GkwFg3xllwO9roDx40z0VDfdh1uOOBqTawEXBq68j8Etn0CHRzY9uWVODdcbrKzQyiR58GmFgRZltE2oiiiw9qRaPz8+s7WAGSoAcvliq0xsRIAevNOt0fzeaiy6exHPJP5JkkTawHw+fWtdoIDmctw4CQA8Dke+yN1MDEUf0A8Q8at2YSzwK7xAl4gSNOUysQLlCyQ0i8VcXNMPQSNOAAAAABJRU5ErkJggg==" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Московская Биржа - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target DesignTimeRectangle="48, 46, 28, 28" ElementType="Button" FriendlyName="'Вперед'" FullSelectorArgument="&lt;ctrl name='Московская Биржа - Google Chrome' role='pane' /&gt;&lt;ctrl name='Вперед' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Московская Биржа - Google Chrome' role='pane' /&gt;&lt;ctrl name='Вперед' role='push button' automationid='' check:text='Вперед' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC1SURBVFhH7dJLDoQgEEVR9r+X/o4UdDdIQBbx2urEiaGj8ug4qcEdGJE6BE3OGVemAAUoQAEUwA4jrBsRQii+P5KZ5xm19W7A/flGbwdM01RcsxcFkKEsggJILIIGSAyiCUCqRRwCrBufSRClvbb9D7B8U9prW9srWE69Dm96BXvVDpdMSglM3nt0vcPt8UJn3fe5tO5XFIAdLlEAGcoMl2gAM1yi/wE2BSjAxBhxZQq4GBDxAasOylg9X19cAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NClick.Target>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </uix:NClick>
+                                  <ui:UiElementExists DisplayName="Подтверждение отсутствия соединения." Exists="[exist]" sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="UiElementExists_6">
+                                    <ui:UiElementExists.Target>
+                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4ba6784d-3858-4c66-9161-d266b3190e14" InformativeScreenshot="c97af81fff7c3f962ee8fa62a649987e" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' omit:title='www.ozon.ru - Google Chrome' /&gt;&lt;wnd aaname='www.ozon.ru' cls='Chrome_RenderWidgetHostHWND' omit:title='Chrome Legacy Window' /&gt;">
+                                        <ui:Target.TimeoutMS>
+                                          <InArgument x:TypeArguments="x:Int32" />
+                                        </ui:Target.TimeoutMS>
+                                        <ui:Target.WaitForReady>
+                                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                                        </ui:Target.WaitForReady>
+                                      </ui:Target>
+                                    </ui:UiElementExists.Target>
+                                  </ui:UiElementExists>
+                                </Sequence>
+                              </ui:InterruptibleWhile.Body>
+                            </ui:InterruptibleWhile>
+                          </Sequence>
+                        </ActivityAction>
+                      </Catch>
+                    </TryCatch.Catches>
+                  </TryCatch>
+                  <If sap2010:Annotation.AnnotationText="Окончательная проверка состояния загрузки страницы в браузере, если интернет соединение в порядке, или было восстановлено в процессе перезагрузки страницы, то робот будет следовать дальше, в противном случае, отобразиться уведомление об ошибке, и будет отправлено письмо на почту." Condition="[exist = False]" sap:VirtualizedContainerService.HintSize="490,1075" sap2010:WorkflowViewState.IdRef="If_1">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <If.Then>
+                      <Sequence sap:VirtualizedContainerService.HintSize="357,140" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Ввод в поисковую строку - productName" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="315,52" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="d25767a5-2830-4387-8094-9d4e8874e0db" Text="[productName + &quot;[k(Enter)]&quot;]" Version="V3">
+                          <uix:NTypeInto.Target>
+                            <uix:TargetAnchorable BrowserURL="https://www.ozon.ru/" CvTextArgument="NCKaTb Ha Ozon" CvType="Text" DesignTimeRectangle="634, 125, 574, 36" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='kaa5 tsBodyL' aaname='' /&gt;" Guid="2c8e250a-54ff-4879-b4d2-b0a02fe7946e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAkIAAAAoCAYAAAASV5UVAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAb5SURBVHhe7d1dSxtLHMfx8176rnrehBR74YUULSVIkFqqqBy1oCWWIEGklhowiA3qRWhaPVYJYhCpNVSpT/Uhkv7PzM5sNpts0saH0uN+P/BH9yHJ7ORif8zM6l9//S1CURRFURR1J+t+wL7KCtxJURRFURQVhhIAAIA76uJSJLMp8jAWEIIIQgAAICx0ILr3gCAEAABCSochXxAqlX7YQwAAAHefb5rs9OxCCEMAACAsfKNCOghd6JVEAAAAIaBjjxOC9KP1OgjpAgAACAvfiBBBCAAAhAlBCAAAhBZBCAAAhBZBCAAAhNYVgtClnB4fyNFZ0BNm9tj3c7uNeopnO5JbzkpG1/qm7JFBAQD47a4QhFZk5FG3tMRX7LanuJ6QNn3s+azs2n2ocpyTyX+eSYvup6qKTGZlr2TPAwAAt+7mgtDFmox22Zs6QSjYmeo720ftozOyuLEjR8cFyS/Pyshz23f9qu8IQwAA/BY3FoRyU73mRt6hiiAUYF/eDZuwE53bsfsqncjHuOnDzuSW3QcAAG7TzQShjSlnSqxtKi3TemSjKggVDzdlMZmQ0YSqZFpy+3Z90cWOrC5nJX9oNqW0b9bN/LslR3bX0eesJF/r187I4ucDEfVemeU12VVNPdq2a2xqquJ4bkeK9r1+qro9jnPZzan32VafXXYpextpmdTX83pWPqrrKRbW1Odulttd4+usRHS/Dabrn1Nak/GIOicyJTm1ad6z8rpMVbavWMhJyvbtxNyKc92eA8mr81cL53L6Zcm01+1HAABwA0GotCWTT9V2l7p5lwqSrApCu0tjZt2QqtbH5mfL0xnZ1gdtOBj5pDfsiEjHkExunegdsjs3ZM6vqJ7hF+rnkCS/ijrff8yriuPNjE752uOy11QOft7IjVe9ql0D6mdcPtqzaizHnXOj8/t2RzBzTab9Qdevy23f7vwLaa0+3jEg4znTf+531an6zP0OTPXK6DoL2gEAuHYQyr/VAaBXxjf0VlUQOkxLj54q65+R3LHeoVwWZLtgb8IVwcPc9HvV7/Ym/mVGOvXn9M/Ktm1W8TBr19iYoOAxbYrMFey2cRtBqPgh5oSJtnhWjuzAVvHzrET1dTYIQm6o8b93rfwbHbKqr09x1xe5a4jcUbjYkuy57XD7J6La4fSZ/a46xiRlR+GKql+dkanKET0AAELqekFo24SVtsSanX7yB6GjJT1688yGpAA2ePTF4+qmrkLQsjdlszdvgtGkM3TkKb7XQaSJINTxTNq7e52KvpyWlB1tCmTb0zlspppMxSWqp6tscFhNqN8fxWSxqqvyb3WAaTAi9MmMCHWmgtYHeTKv9Pur66scOCrtSLJf7e9S739mduWm9JNnte0w/dMto+t6y35X6vvx1I7aAQAQVlcPQq9mzXqgroSsll/mv8maUZCA0Q2XDR6RfjsaVBGE6r7WCRRNBKHIkAw6gSYmkSdq+xfa09plgpNbrXq0xwYhM3VVG3hMexsEoeO09Oh+ezoj+XpPhZ1lZFB/ljt16LBTcV0q9Hyzu5R67XADlxl5CuoXghAAAK6rByGnKqayHFU3WXtTHnxfZxSmPBXlrrvx3s8d2ah+rZmKayIIVd7wt6ad6aS663TK7bHbDntNNgiZkZ+BqpGqE1l8qfujQRCSc1lN6NfaabXqMHS5JdN61Ecd71ly2+etm0r6L80Gr+p2eFOVZj9BCACARq4VhNpUODi1e42qm2wpJ+N6zUpHr/Qls5L/simrC9MyMm8fD68MHu70j3vTd/8uUceAjC5kZXV9RRaT7sLrJoJQd1xS9mmrZMyErYl6T6f/QhCSr3NmPVDXmExmVlS7spJK6PCh29UoCCnuNepzoy9kJJlW7VqSZGJM2u1C8vaE16e7zvRgt3RO6PO8p8b0U2DlNUOPh2R8YUVyGyuSem0XRQ+7T6YRhAAAaOTqQSgSl4xdr+IJuMker8lEn/8vKbf2zQU8Naa4N3d3LUwhLX1R73Ut0TF5l2pyasx9ra7HAzK4sFX/cfpfCULKaW5aIu4TcKpan09L6s1PpsZcpQPJzcXKwadcT1Sg+VDwta2m/bbK1/ktIyPd/mPtL9OyXf7vJwQhAAAauUIQupri2YEc1f0fZY3Y/192fCLFP+kvLpfOvXbZXc1xr0vVNf83W/G7eZ/T2/v6AAC4k35bEAIAAPjTEIQAAEBoEYQAAEBoEYQAAEBoEYQAAEBoEYQAAEBo+YLQxUWzj7YDAAD8P+nY44Sg+zYIlUo/7CEAAIC7LbNpg5AuQhAAAAiTh7GKIGT3AQAA3Hm+0SCCEAAACAsdgu49IAgBAICQ0AujdQDyTYdVVuBOiqIoiqKoMFTgToqiKIqiqLtQ+hH5oP1OifwHGgpK+blNubkAAAAASUVORK5CYII=" InformativeScreenshot="295402698b69e50e78ba02959ed0b6a7.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='OZON — интернет-магазин. Миллионы товаров по выгодным ценам' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CvTextArgument="Bespe" CvType="Text" DesignTimeRectangle="575, 134, 37, 18" ElementType="Text" FriendlyName="'Везде'" FullSelectorArgument="&lt;webctrl aaname='     Везде   ' parentid='stickyHeader' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='     Везде   ' parentid='stickyHeader' tag='SPAN' type='' class='a3ka tsBodyM' check:innerText='Везде' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACkAAAAWCAYAAABdTLWOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAItSURBVEhL7ZTfa9pQGIb3J3vhRS8KEsQypQoWZy4OKEhLA2aMEkqZtIV0rEPsCKtDAqugIxSxpZoOW3r17jv5eTQzdSNbd+HFA+Y757znycl3fPXw+IT/nbVkUqwlkyKQtD40sLldEZBROriA9SO66F8TSA6OGVIZEmuqqHMaDOlMESmmYywseAkWJBV0hEFTq0RqL0GspPG2jNRrDaZQsy5bUJzT1nD4xYLt1Ce4utSh+l+heQR9OAnWjPsXOP8s0sXAfi4zZEGyiA2/JwskmK3h4Fu4mTNHqqC057WDVET+eEhjI7xnZUhMcSSrO9QmmRpOb911nX16lsphbobh0Hou0x3nLO/JPbpIWQovqOhMaY7dRpUCqm3hhM5qtIEKw3v2sU0Nm1JjXnKnhQEft1rY8iVXzIz93A9jHXk63fzpyAvnJ7RIeCqODK/lZNQ7tMbLWSq5QiYnXpK/KS3aeNfzAitQ+8I4Zxb+tqc3GN/ewOppztzdnlt3JPcNd15EMj6TsyBZgxI0tw5F5rfb36wPtUSbvTlC95rLDHHelJGWdViP9zANA1d3906W/f0EJXq5apueZ13sbtHXOPNOVpSMzXS9OJGLM0eOgX0SmnjUBisI41kG5Sv1k22gnhPqRFo+wWBmgAm1eTzRZZn+nkQg+TvYd/ytJ5G/CrdOTGdejUvKUE2vHvCR2mi+75Zlcv5IcnW6ULbpll+vWv81f1kyGdaSSbGWTIYn/AS8E+2tiV4eBwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NTypeInto.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NTypeInto>
+                      </Sequence>
+                    </If.Then>
+                    <If.Else>
+                      <Sequence sap:VirtualizedContainerService.HintSize="376,666" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                        <Sequence.Variables>
+                          <Variable x:TypeArguments="x:String" Name="screenPath" />
+                        </Sequence.Variables>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NTakeScreenshot sap2010:Annotation.AnnotationText="Производится скриншот окна браузера.&#xD;&#xA;out: screenPath" DisplayName="Скриншот" FileName="screenshot.png" FileNameMode="DateTime" sap:VirtualizedContainerService.HintSize="334,109" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_1" ScopeIdentifier="d25767a5-2830-4387-8094-9d4e8874e0db" Version="V3">
+                          <uix:NTakeScreenshot.SavedTo>
+                            <OutArgument x:TypeArguments="x:String">[screenPath]</OutArgument>
+                          </uix:NTakeScreenshot.SavedTo>
+                          <uix:NTakeScreenshot.Target>
+                            <uix:TargetAnchorable DesignTimeRectangle="0, 0, 1936, 1056" DesignTimeScaleFactor="1" FriendlyName="'ozon.ru/…/geomar-modeli…'" Guid="28f9b242-627e-4b22-a09a-35d3f1a62c3d" InformativeScreenshot="2b8a2fa87da5dc7e9021097c4f87494d.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+                          </uix:NTakeScreenshot.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NTakeScreenshot>
+                        <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Уведомления об ошибке" sap:VirtualizedContainerService.HintSize="334,52" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Произошла ошибка, проверьте интернет соединение.&quot;]">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:MessageBox>
+                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Отправка сообщения о сбое в работе&#xD;&#xA;to: apple7421@mail.ru" DisplayName="Шаблон отправки SMTP сообщения, mail.ru" sap:VirtualizedContainerService.HintSize="334,94" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" UnSafe="False" WorkflowFileName=".templates\SendSMTP1.xaml">
+                          <ui:InvokeWorkflowFile.Arguments>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_body">
+                              <VisualBasicValue x:TypeArguments="x:String" ExpressionText="&quot;Здравствуйте!&quot;+Environment.NewLine+&quot;Произошел сбой при запуске, проверьте робота на наличие ошибок.&quot;" />
+                            </InArgument>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_subject">
+                              <Literal x:TypeArguments="x:String">Сбой</Literal>
+                            </InArgument>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_adress_cc" />
+                            <InArgument x:TypeArguments="x:String" x:Key="in_adress_to">
+                              <Literal x:TypeArguments="x:String">apple7421@mail.ru</Literal>
+                            </InArgument>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_attachments">
+                              <VisualBasicValue x:TypeArguments="x:String" ExpressionText="screenPath" />
+                            </InArgument>
+                          </ui:InvokeWorkflowFile.Arguments>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:InvokeWorkflowFile>
+                        <ui:DeleteFileX sap2010:Annotation.AnnotationText="Удаление сделанного скриншота." DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="334,111" sap2010:WorkflowViewState.IdRef="DeleteFileX_1" Path="[screenPath]">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:DeleteFileX>
+                        <ui:CloseWindow TimeoutMS="{x:Null}" UseWindow="{x:Null}" DisplayName="Закрытие браузера" sap:VirtualizedContainerService.HintSize="334,52" sap2010:WorkflowViewState.IdRef="CloseWindow_1" Selector="&lt;wnd app='chrome.exe' omit:cls='Chrome_WidgetWin_1' omit:title='Объект Range (Excel) | Microsoft Learn - Google Chrome' /&gt;&lt;ctrl omit:name='Объект Range (Excel) | Microsoft Learn - Google Chrome' role='pane' /&gt;&lt;ctrl name='Закрыть' role='push button' /&gt;" WaitForReady="INTERACTIVE">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:CloseWindow>
+                      </Sequence>
+                    </If.Else>
+                  </If>
+                  <uix:NExtractData sap2010:Annotation.AnnotationText="out: extractData" AppendResults="False" ContinueOnError="True" DataTable="[extractData]" DelayBefore="2" DelayBetweenPages="1" DisplayName="Получение ссылки, наименования, цен" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Ссылка на товар'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='Наименование товара'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;true&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='Цена со скидкой'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column3' Name='Цена без скидки'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='href' name2='Column1' attr2='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column3' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="490,188" sap2010:WorkflowViewState.IdRef="NExtractData_1" InteractionMode="Simulate" LimitExtractionTo="Page" MaximumResults="3" ScopeIdentifier="d25767a5-2830-4387-8094-9d4e8874e0db" Version="V3">
+                    <uix:NExtractData.NextLink>
+                      <uix:TargetAnchorable BrowserURL="https://www.ozon.ru/category/monitory-15738/?category_was_predicted=true&amp;deny_category_prediction=true&amp;from_global=true&amp;text=%D0%9C%D0%BE%D0%BD%D0%B8%D1%82%D0%BE%D1%80" CvElementArea="949, 679, 101, 34" CvTextArea="974, 690, 52, 12" CvTextArgument="Danbwe" CvType="Button" DesignTimeRectangle="974, 688, 51, 18" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Дальше'" FullSelectorArgument="&lt;webctrl aaname='Дальше' parentid='layoutPage' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Дальше' parentid='layoutPage' tag='DIV' type='' class='x5-e4' check:innerText='Дальше' /&gt;" Guid="04bf4f19-6d83-45e1-861d-aa855e2302e0" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADcAAAAWCAYAAABkKwTVAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAI5SURBVFhH7VU9SwNBEM2vsLT0H1xpl9LOMo0QQRBBAhZyIJguhaA2EhAUBLlCDBaSSq4TQQiCcCCyjSiCBBREsBzf7M5c9j4EU2liisfdm4/beTuze5X+J9G4YiJuVDERN6ooiIuPiWYbJdgmSnKxfx0Fcd19GGtEM6sDYdPglY0xEtd+HNjCfyXug6hzStQ8IGpdEJln8CuiyxfnT24czwC2J/ieHhzXWB+aZ4Sbe8eTN8c1V3m/TxRJHU08e+D6Lcbw4vDhcMXFKALhYc/FtxHr+y0kPzl3XGN9aF5XeL4WzbX8Veqou6MT4MnvkbdpQ4szsfMHiDPoIHexvelsGXHr6A520gA7eM+Lq524LnQSdIS/o3nw/URcfOTeI4hkX98QVcGrZ8KBgriolV2A4YtLF8SIpHnXzpYRJ/F5rgX6mMLlFfMmcRz4T8RpbAHIsTUBWXFYIFyAEZ3Qwhi+ON2x5u3Ab3Du2DaMOI29jOR76OAw4jq7eF/EE2PI02HB73oegVScPaw4lFNIDvZkZAQ12CqY60O+FFBEwBzzzpdJhAWrvCGwccFdjIXl3gaVidOxbMlI+92o8wUB1Nccn0c9zBteLB8PW+sWauA6Ucvc0jdnrmxcCpACe138B0VQBc9QdpjF2QLZJp1hlIlLgUtgGYWmcb7vG2gnY3Q9rQOYwZHic67rFsTt3Hlt9uBfCjYHI8x2vQx+DVKHeS/6CuJ0V/Lwd7/M/xeRvVDGDBNxo4qJuNEE0Rdt7TV+XFzsMgAAAABJRU5ErkJggg==" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Монитор - купить на OZON' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NExtractData.NextLink>
+                    <uix:NExtractData.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="476, -339, 1192, 10295" DesignTimeScaleFactor="1" FriendlyName="'−47% 21.5&quot;'" FullSelectorArgument="&lt;webctrl class='pi' parentid='paginatorContent' tag='DIV' /&gt;" Guid="725aee66-8f26-47fa-955c-78677013ad60" InformativeScreenshot="70d2aca9a977c7edddfd261e6183fcc4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Монитор - купить на OZON' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                    </uix:NExtractData.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NExtractData>
+                  <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[extractData]" DisplayName="Запись полученных данных в таблицу" sap:VirtualizedContainerService.HintSize="490,116" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="[productName]" WorkbookPath="[pathDT]">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:WriteRange>
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="1912, -8, 1936, 1056" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="62757b45c9434d4ccc5bcff0bafc7300.jpg" Selector="&lt;html app='chrome.exe' title='Монитор - купить на OZON' /&gt;" Title="Монитор - купить на OZON" Url="https://www.ozon.ru/" />
+            </uix:NApplicationCard.TargetApp>
+          </uix:NApplicationCard>
+          <Assign sap2010:Annotation.AnnotationText="Счетчик повторений поиска товаров" sap:VirtualizedContainerService.HintSize="586,113" sap2010:WorkflowViewState.IdRef="Assign_1">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:Int32">[count]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:Int32">[count+1]</InArgument>
+            </Assign.Value>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </Assign>
+        </Sequence>
+      </ui:InterruptibleDoWhile.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InterruptibleDoWhile>
+    <ui:ExcelApplicationScope Password="{x:Null}" sap2010:Annotation.AnnotationText="Форматирования текста по центру, столбцы по ширине, столбцы с ценами: формат денежный." DisplayName="Активация макроса для форматирования таблицы данных" sap:VirtualizedContainerService.HintSize="684,94" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="[pathDT]">
+      <ui:ExcelApplicationScope.Body>
+        <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,163" sap2010:WorkflowViewState.IdRef="Sequence_10">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:InvokeVBA OutputValue="{x:Null}" CodeFilePath="OzonAutoFit.txt" DisplayName="Invoke VBA" EntryMethodName="AllSheets" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="InvokeVBA_1">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:InvokeVBA>
+          </Sequence>
+        </ActivityAction>
+      </ui:ExcelApplicationScope.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ExcelApplicationScope>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="От apple7421@mail.ru" DisplayName="Шаблон отправки SMTP Письма, mail.ru" sap:VirtualizedContainerService.HintSize="684,144" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName=".templates\SendSMTP1.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="in_body">
+          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="&quot;Здравствуйте!&quot;+Environment.NewLine+&quot;Во вложении итоговый отчет по товарам с Ozon.&quot;" />
+        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_subject">
+          <Literal x:TypeArguments="x:String">Итоговый отчет по Ozon</Literal>
+        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_adress_cc">
+          <Literal x:TypeArguments="x:String">apple7421@mail.ru</Literal>
+        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_adress_to">
+          <Literal x:TypeArguments="x:String">gigabyte.corp@yandex.ru</Literal>
+        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_attachments">
+          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="pathDT" />
+        </InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InvokeWorkflowFile>
+  </Sequence>
+</Activity>

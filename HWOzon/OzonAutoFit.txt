@@ -1,0 +1,26 @@
+Sub AllSheets()
+    Dim xSh As Worksheet
+    Application.ScreenUpdating = False
+    For Each xSh In Worksheets
+        xSh.Select
+        Call AutofitOzon
+    Next
+    Application.ScreenUpdating = True
+End Sub
+Sub AutofitOzon()
+Dim cell As range
+    For Each cell In ActiveSheet.UsedRange
+        If cell.Value <> "" Then
+            cell.HorizontalAlignment = xlCenter
+        End If
+        If cell.Value = "" Then
+            cell.Value = "Не удалось извлечь"
+        End If
+    Next cell
+    With Sheets
+    Columns("A").ColumnWidth = 20
+    Columns("C").NumberFormat = "#,##0.00 $"       
+    Columns("D").NumberFormat = "#,##0.00 $"
+    Columns("B:D").AutoFit
+    End With
+End Sub
